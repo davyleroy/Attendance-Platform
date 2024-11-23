@@ -8,8 +8,8 @@ export default function Component() {
   const bashScript = `
 #!/bin/bash
 
-# Create project directory and navigate into it
-mkdir TraineeTimeTracker && cd TraineeTimeTracker
+# Exit if any command fails
+set -e
 
 # Initialize a new Node.js project
 npm init -y
